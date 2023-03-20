@@ -1,0 +1,134 @@
+nav {
+    display:flex;
+    margin:1rem;
+    padding:1rem;
+    border-radius:10px;
+    background: var(--dark-gray);
+    div {
+        display:flex;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+        padding:0rem 2rem;
+        color:white;
+        gap:1rem;
+        .home {
+            font-size:22px;
+        }
+        a {
+            font-size:18px;
+            color:white;
+        }
+        input{
+            width:55%;
+            border-radius:10px;
+            border:none;
+            padding:0.5rem;
+            
+        }
+    }
+}
+
+section {
+    margin:1rem;
+    h1 {
+        font-size:32px;
+    }
+
+    .filters {
+        display:flex;
+        gap:1rem;
+        font-size:16px;
+        button {
+            color:white;
+            background-color:var(--blue);
+            padding:0.3rem 2rem;
+            border-radius:10px;
+            box-shadow: 2px 2px 1px lightgray;
+
+        }
+        button:hover {
+            cursor: pointer;
+            scale:1.05;
+            transition: all 0.2 linear;
+            background-color:var(--red);
+        }
+    }
+    .repeat-items {
+        gap:2rem;
+        display:flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap:wrap;
+        padding: 0rem 2rem;
+        margin-top:4rem;
+        
+        .item {
+            background: rgba(216, 216, 216, 0.2);
+            box-shadow: -7.65634px 3.40282px 5.95493px rgba(157, 149, 149, 0.25);
+            border-radius: 19.5662px;
+            padding: 0rem 2rem;
+            .content {
+
+                position: relative;
+                top:-60px;
+                display:flex;
+                flex-direction: column;
+                gap:0rem;
+
+            }
+            h1 {
+                font-size:19px;
+                text-align: start;
+            }
+            .price {
+                position: relative;
+                top:-20px;
+                color:limegreen;
+            }
+            .info {
+                position: relative;
+                top:-10px;
+                font-style: italic;
+            }
+        }
+        .item:hover {
+            scale:1.05;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+    }
+
+    img {
+        height:200px;
+        width:200px;
+        object-fit: scale-down;
+        position: relative;
+        top:-40px;
+    }
+}
+
+.pagination {
+    display:flex;
+    justify-content: center;
+    margin:4rem 0rem;
+    .page {
+        display:flex;
+        align-items: center;
+        gap:2rem;
+        button {
+            background: none;
+            border:none;
+        }
+        button:hover {
+            scale:1.05;
+            cursor: pointer;
+            transition: all 0.2s linear;
+        }
+        h1 {
+            font-size:16px;
+            position: relative;
+            top:7px;
+        }
+    }
+}

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin:0;
+    padding:0;
+
+}
+
+a {
+    text-decoration: none;
+}
+:root {
+    --blue: #0B72BA;
+    --red: #C55049;
+    --gray: #BABABA;
+    --dark-gray: #303030;
+    --text-hover: #818181;
+    --button-hover-blue:#064a7b;
+    --button-hover-red:#863531;
+}
+html, body { height: 100%; }
+
+body {
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+    height:100vh;
+}
+
+button {
+    border:none;
+    box-shadow:none;
+}

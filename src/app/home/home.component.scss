@@ -1,0 +1,57 @@
+header {
+
+    padding:2rem 0rem;
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x:hidden;
+    .header {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    margin-bottom:12rem;
+
+    }
+
+    h1 {
+        font-size:53px;
+        line-height: 50px;
+    }
+    p {
+        font-size:19px;
+        width:800px;
+    }
+}
+
+.blobs {
+    margin-top:12rem;
+    margin:0 auto;
+}
+
+#blobSvg {
+    display:block;
+    position:sticky;
+    width:400px;
+}
+
+#iconSvg {
+    display:block;
+    position:relative;
+    top:-400px;
+    right:-50px;
+    width:300px;
+    height:400px;
+    z-index:3;
+}
+
+@media screen and (max-width: 1218px) {
+    header {
+        padding:1rem;
+        p {
+            width:400px;
+
+        }
+    }
+    
+    
+}

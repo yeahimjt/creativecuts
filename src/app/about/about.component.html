@@ -1,0 +1,83 @@
+<div class="about-body" id="about">
+    <svg preserveAspectRatio="none" width="1440" height="347" class="cut-about" viewBox="0 0 1440 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_i_7_202)">
+        <path d="M1346.58 91.9854C1401.34 145.605 1431.76 53.3494 1440.12 0.519064L1440 345.519L-25.3802 345.519L-25.3802 75.4904C-2.05363 97.8322 59.3122 150.921 118.164 184.542C177.017 218.164 213.532 225.577 224.433 225.081C254.422 191.091 350.676 135.426 495.775 184.679C677.149 246.244 968.956 137.349 981.728 142.854C994.5 148.358 1035.39 111.373 1087.51 123.392C1129.2 133.007 1120.54 161.404 1110.99 174.4C1136.71 177.41 1191.83 178.83 1206.55 160.435C1221.27 142.04 1242.69 86.1145 1251.55 60.451C1260.41 48.6209 1291.83 38.3656 1346.58 91.9854Z" fill="#303030"/>
+        </g>
+        <defs>
+        <filter id="filter0_i_7_202" x="-25.3802" y="0.519073" width="1465.5" height="345" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dx="15" dy="2"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.0791667 0 0 0 0 0.0791667 0 0 0 0 0.0791667 0 0 0 0.55 0"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_7_202"/>
+        </filter>
+        </defs>
+        </svg>
+    <div class="about">
+        <h1>
+            About Us
+        </h1>
+        <p>
+            Since opening in 2003, we have had countless customers who left our seats with the upmost satisfactions.
+            Our owner Jack Smith has driven the Creative Cuts barbershop to extreme lengths for the benefits of our customer.
+            It is his and the employees at Creative Cuts’ passion that has allowed for the expansion of over 5 locations around the United States to spread the skills and joy from this special barbershop.
+        </p>
+    </div>
+    <!-- <div class="testimonials">
+        <h1>Take the words from our amazing customers!</h1>
+        <p class="italic">Hover over the torn pieces of paper</p>
+        <div class="testimonial-container">
+            <div *ngFor="let t of testimonials; let i = index" class="testimonial-item">
+                <img src={{t[0]}}/>
+                <h1>{{t[1]}}</h1>
+                <p>{{t[2]}}</p>
+                <svg width="596" height="624" class="testimonial-cut" viewBox="0 0 596 624" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_19_2)">
+                    <path d="M77.7609 118.486C77.7609 33.4208 152.297 8.49589 189.564 6.66653C242.608 1.63581 348.696 -5.4072 348.696 6.66653C348.696 21.7587 431.005 6.66653 528.404 29.9908C625.804 53.3151 590.136 71.1513 587.393 118.486C584.649 165.82 551.725 204.237 551.725 215.899C551.725 227.561 489.993 304.394 507.827 351.042C522.094 388.361 543.037 417.814 551.725 427.875C538.007 438.851 506.455 464.234 489.993 477.954C469.416 495.104 463.243 510.882 431.005 566.449C398.767 622.016 398.767 581.541 348.696 604.865C298.624 628.19 307.541 616.527 221.802 581.541C153.211 553.552 128.29 569.879 124.403 581.541C108.856 568.736 72.4108 536.676 51.0104 510.882C24.2599 478.64 51.0104 454.63 51.0104 427.875C51.0104 401.121 156.641 383.971 51.0104 330.462C-33.4938 287.655 5.74026 255.916 35.9203 245.397C49.8672 238.537 77.7609 203.551 77.7609 118.486Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_19_2" x="0" y="0" width="596" height="624" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="7"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.65 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_19_2"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_2" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+            </div>
+        </div>
+    </div> -->
+    <div class="card">
+    <mat-card *ngFor="let t of testimonials; let i = index">
+        <mat-card-header>
+            <img mat-card-avatar src="{{t[0]}}">
+            <mat-card-title>{{t[1]}}</mat-card-title>
+            <mat-card-subtitle>Frequent Customer</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{t[2]}}</p>
+        </mat-card-content>
+    </mat-card>
+    </div>
+    <svg preserveAspectRatio="none"  class="cut-about cut-aboutt" width="1440" height="346" viewBox="0 0 1440 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_i_7_206)">
+        <path d="M80.5085 254.029C25.7319 200.429 -4.65407 292.696 -13 345.529V0.528861L1452.38 -5.00341e-05L1452.48 270.029C1429.14 247.696 1367.76 194.629 1308.89 161.029C1250.03 127.429 1213.51 120.029 1202.61 120.529C1172.63 154.529 1076.4 210.229 931.283 161.029C749.886 99.5288 458.119 208.529 445.345 203.029C432.571 197.529 391.693 234.529 339.573 222.529C297.877 212.929 306.53 184.529 316.068 171.529C290.349 168.529 235.232 167.129 220.516 185.529C205.8 203.929 184.407 259.862 175.55 285.529C166.693 297.362 135.285 307.629 80.5085 254.029Z" fill="#303030"/>
+        </g>
+        <defs>
+        <filter id="filter0_i_7_206" x="-13" y="0" width="1465.48" height="345.529" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dx="15" dy="2"/>
+        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0.0791667 0 0 0 0 0.0791667 0 0 0 0 0.0791667 0 0 0 0.55 0"/>
+        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_7_206"/>
+        </filter>
+        </defs>
+    </svg>
+</div>

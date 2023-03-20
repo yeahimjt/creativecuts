@@ -1,0 +1,53 @@
+div {
+    background-color: var(--dark-gray);
+    h1 {
+        color: #FFFFFF;
+        text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.25);
+        font-size: 64px;
+        padding-top:1rem;
+        padding-left:2rem;
+    }
+}
+.form {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:8rem 0rem;
+    .form-name,
+    .form-email,
+    .form-body {
+        width:50%;
+        margin:0rem auto;
+    }
+    background-color:var(--dark-gray);
+    button {
+        background-color: var(--blue);
+        width:50%;
+        margin:0 auto;
+        padding:0.5rem 0rem;
+        font-size:19px;
+        color:white;
+        border-radius:6px;
+    }
+    button:hover {
+        scale:1.05;
+        cursor: pointer;
+        transition:all 0.3s linear;
+    }
+}
+
+
+.mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: white !important;
+   }
+  
+   .mat-form-field-underline {
+    /*change color of underline*/
+    background-color: white !important;
+  } 
+  
+  .mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: white !important;;
+  }

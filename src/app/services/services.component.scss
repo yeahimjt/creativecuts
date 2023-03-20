@@ -1,0 +1,106 @@
+.services {
+    .title {
+        font-size: 64px;
+        text-align:end;
+        padding-right:2rem;
+        color: #494949;
+        text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.25);
+    }
+    .service-links {
+        display:flex;
+        gap:3rem;
+        justify-content:center;
+        align-items: center;
+        padding:1rem;
+        p {
+            font-size:22px;
+        }
+        p:hover {
+            color:var(--gray);
+            cursor:pointer;
+        }
+        .active {
+            background-color:var(--blue);
+            padding:0.5rem 1rem;
+            border-radius:10px;
+        }
+    }
+    .repeat-service {
+        display:flex;
+        flex-wrap:wrap;
+        gap:4rem;
+        justify-content: center;
+    }
+    .service {
+        display:flex;
+        flex-direction: column;
+        width:350px;
+        background: rgba(216, 216, 216, 0.4);
+        box-shadow: -9px 4px 7px rgba(157, 149, 149, 0.25);
+        border-radius: 23px;
+        margin-top: 4rem;
+        div {
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+        }
+        img {
+            width:300px;
+            height:200px;
+            justify-self: center;
+            position: relative;
+            top:-40px;
+            border-radius: 14px;
+        }
+        .price {
+            color:limegreen;
+        }
+        .info {
+            padding:1rem;
+        }
+    }
+    .service:hover {
+        rotate:8deg;
+        transition: rotate 0.2s linear;
+
+    }
+}
+
+.panel-bar {
+    width:50%;
+    margin:0 auto;
+}
+
+.amount {
+    color:limegreen;
+}
+
+.cta {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    margin:2rem 0rem;
+    p {
+
+    }
+    button {
+        padding:1rem 2rem;
+        border-radius:10px;
+        background-color: var(--red);
+        color:white;
+    }
+
+    button:hover {
+        background-color:var(--button-hover-red);
+        cursor:pointer;
+    }
+}
+
+.cut {
+    width:calc(100vw + 20px);
+    position:relative;
+    left:-20px;
+    top:5px;
+}
